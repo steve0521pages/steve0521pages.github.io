@@ -21,7 +21,7 @@
       <p>Your browser doesn't support HTML5 video.</p>
     </video>
     <script>
-      // Difference is not muted nor loop and not does not play initially
+      // Difference is not muted nor loop and not does not play initially, but show controls
       const urlParams = new URLSearchParams(location.search);
       const vSource = urlParams.get("source").substring(0, 15);
       document.title = vSource;
