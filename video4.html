@@ -5,19 +5,22 @@
     <title></title>
   </head>
   <body>
+    <!-- width="1903"
+      height="800" -->
     <iframe
       id="myIframe"
-      width="1903"
+      width="1430"
       height="800"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
     ></iframe>
     <script>
-        const urlParams = new URLSearchParams(location.search);
-        const vSource = urlParams.get("source").substring(0, 15);
-        // document.title = vSource;
-        document.getElementById('myIframe').src = "https://www.youtube.com/embed/" + vSource + "?rel=0&autoplay=1";
-      </script>
+      const urlParams = new URLSearchParams(location.search);
+      const vSource = urlParams.get("source").substring(0, 15);
+      // document.title = vSource;
+      document.getElementById("myIframe").src =
+        "https://www.youtube.com/embed/" + vSource + "?rel=0&autoplay=1";
+    </script>
   </body>
 </html>
