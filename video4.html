@@ -21,6 +21,14 @@
       // document.title = vSource;
       document.getElementById("myIframe").src =
         "https://www.youtube.com/embed/" + vSource + "?rel=0&autoplay=1";
+      const x = urlParams.get("x").substring(0, 15);
+      if (x) {
+        document.getElementById("myIframe").width = x;
+      }
+      const y = urlParams.get("y").substring(0, 15);
+      if (y) {
+        document.getElementById("myIframe").height = y;
+      }
     </script>
   </body>
 </html>
