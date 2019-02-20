@@ -20,7 +20,7 @@
       const vSource = urlParams.get("source").substring(0, 15);
       // document.title = vSource;
       document.getElementById("myIframe").src =
-        "https://www.youtube.com/embed/" + vSource + "?rel=0&autoplay=1";
+        "https://www.youtube.com/embed/" + vSource + "?rel=0";
       const x = urlParams.get("x").substring(0, 15);
       if (x) {
         document.getElementById("myIframe").width = x;
